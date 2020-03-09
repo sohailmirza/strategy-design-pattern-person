@@ -4,7 +4,7 @@ public class Person {
     private String name;
     public IAttackBehavior attackBehavior;
 
-    public void setName(String name) {
+    public Person(String name) {
         this.name = name;
     }
 
