@@ -1,6 +1,6 @@
 package com.strategy.person;
 
-public class Person implements IAttackBehavior{
+public class Person {
     private String name;
     public IAttackBehavior attackBehavior;
 
