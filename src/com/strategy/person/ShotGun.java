@@ -7,6 +7,6 @@ public class ShotGun implements IAttackBehavior {
         return "Uses Shot Gun to attack";
     }
     public String damage() {
-        return "incurs damage of 200 HP";
+        return "incurs damage of " + damage + " HP";
     }
 }
