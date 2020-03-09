@@ -15,4 +15,8 @@ public class Person implements IAttackBehavior{
     public String wayOfAttack() {
         return attackBehavior.attack();
     }
+
+    public void setAttackBehavior(IAttackBehavior attackBehavior) {
+        this.attackBehavior = attackBehavior;
+    }
 }
