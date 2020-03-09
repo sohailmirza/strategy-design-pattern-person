@@ -16,6 +16,10 @@ public class Person {
         return attackBehavior.attack();
     }
 
+    public String amountOfDamage() {
+        return attackBehavior.damage();
+    }
+
     public void setAttackBehavior(IAttackBehavior attackBehavior) {
         this.attackBehavior = attackBehavior;
     }
