@@ -1,7 +1,13 @@
 package com.strategy.person;
 
 public class AssaultRifle implements IAttackBehavior {
-    int damage = 75;
+    private int damagePoints;
+    public AssaultRifle() {
+        this.damagePoints = 75;
+    }
+    public AssaultRifle(int damagePoints) {
+        this.damagePoints = damagePoints;
+    }
     @Override
     public String attack() {
         return "Uses Assault Rifle to attack";
@@ -9,6 +15,6 @@ public class AssaultRifle implements IAttackBehavior {
 
     @Override
     public String damage() {
-        return "incurs damage of " + damage + " HP";
+        return "incurs damage of " + damagePoints + " HP";
     }
 }
